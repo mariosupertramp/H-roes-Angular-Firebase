@@ -1,0 +1,19 @@
+{
+  "heroes": {
+    "-NGxYUMoJW4I5Mku2kJh": {
+      "nombre": "batman",
+      "poder": "andar de noche",
+      "vivo": false
+    },
+    "-NGxaaoJVEKEq_E3KBRO": {
+      "nombre": "superman",
+      "poder": "volar alto",
+      "vivo": false
+    },
+    "-NGxaeirt3UegCn-F-OB": {
+      "nombre": "chapulin colorado",
+      "poder": "chipote chillón",
+      "vivo": true
+    }
+  }
+}
