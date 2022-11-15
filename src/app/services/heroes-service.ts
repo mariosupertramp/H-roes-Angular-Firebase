@@ -15,6 +15,7 @@ export class HeroesService {
 
   actualizarHeroe( heroe: HeroeModel){
 
+
     const heroeTemp ={
       ...heroe
     }
@@ -35,10 +36,35 @@ export class HeroesService {
               return heroe;
              })
            );   
-
-
 }
 
+
+// Aquí hay que hacer carpinteria para recibir los datos de Firebase
+getHeroes(){
+
+  return this.http.get(`${this.url}/heroes.json`)
+  .pipe(
+    map(resp => this.crearArreglo(resp))
+  );
+}
+
+
+
+
+private crearArreglo (heroesObj: any){
+
+const heroes : HeroeModel[] = [];
+
+if(heroesObj === null){return [];}
+
+Object.keys( heroesObj ).forEach( key => {
+  const heroe:HeroeModel = heroesObj[key];
+  heroe.id = key;
+  heroes.push( heroe );
+});
+
+return heroes;
+}
 
 
 

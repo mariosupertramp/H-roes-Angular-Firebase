@@ -18,6 +18,11 @@ export class HeroeComponent implements OnInit {
   constructor(private heroeService:HeroesService) { }
 
   ngOnInit(): void {
+
+
+
+
+    
   }
 
 
@@ -41,22 +46,28 @@ Swal.showLoading(Swal.getDenyButton());
 
 let peticion: Observable<any>;
 
-
     if(this.heroe.id){
 
-   peticion = this.heroeService.actualizarHeroe(this.heroe);
+      peticion = this.heroeService.actualizarHeroe(this.heroe);
 
     }else{
 
-   peticion = this.heroeService.crearHeroe(this.heroe);
+      peticion = this.heroeService.crearHeroe(this.heroe);
       
     }
 
-    Swal.fire(
+    peticion.subscribe( resp => {
+
+     Swal.fire(
       this.heroe.nombre,
       'Se actualizó correctamente!',
       'success'
-    )
+     )
+
+    });
+
+    
+
 
   }
 

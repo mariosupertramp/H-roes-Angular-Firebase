@@ -25,17 +25,23 @@
       </tr>
     </thead>
     <tbody class="table-group-divider">
-      <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-        <td>....</td>
+      <tr *ngFor="let heroe of heroes; let i = index">
+        <th scope="row">{{i+1}}</th>
+        <td>{{heroe.nombre}}</td>
+        <td>{{heroe.poder}}</td>
+        <td>
+          <label *ngIf="heroe.vivo" class="badge-success">Vivo</label>
+          <label *ngIf="!heroe.vivo" class="badge-danger">Muerto</label>
+          <span class="badge badge-pill pink"><i class="fas fa-wheelchair" aria-hidden="true"></i></span>
+
+        </td>
+        <td>
+          ...
+        </td>
       </tr>
      
     </tbody>
   </table>
-
 
 
   <div class="alert alert-info text-center mt-3">
@@ -56,3 +62,6 @@
         <i class="fa fa-exclamation fa-5x"></i>
     </p>
   </div>
+
+  
+  
