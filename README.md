@@ -6,7 +6,7 @@
 
 <h2>Screenshot:</h2>
 
-<img src="http://45.79.30.160/img1.png" alt="project-screenshot" width="600" height="400/">
-<img src="http://45.79.30.160/img2.png" alt="project-screenshot" width="600" height="400/">
-<img src="http://45.79.30.160/img3.png" alt="project-screenshot" width="600" height="400/">
-<img src="http://45.79.30.160/img4.png" alt="project-screenshot" width="600" height="400/">
+<img src="http://45.79.30.160/ima1.png" alt="project-screenshot" width="600" height="400/">
+<img src="http://45.79.30.160/ima2.png" alt="project-screenshot" width="600" height="400/">
+<img src="http://45.79.30.160/ima3.png" alt="project-screenshot" width="600" height="400/">
+<img src="http://45.79.30.160/ima4.png" alt="project-screenshot" width="600" height="400/">
